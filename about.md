@@ -2,14 +2,12 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+嵌入式软件开发, 多学习, 多思考
 
-### More Information
+### 联系方式
 
-A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[bob-hjl@126.com](mailto:bob-hjl@126.com)
