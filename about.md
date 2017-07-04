@@ -9,5 +9,5 @@ published: true
 
 ### 联系方式
 
-
+![]({{ site.baseurl }}/images/wechat.png)
 [bob-hjl@126.com](mailto:bob-hjl@126.com)
