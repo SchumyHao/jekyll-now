@@ -1,5 +1,12 @@
 ---
-published: false
+published: true
+category: homeassistant
+tags:
+  - homeassistant
+  - rokid
+  - nodjs
+  - docker
+  - rhass
 ---
 ## 背景
 
@@ -89,3 +96,13 @@ rhass
 4.userToken输入homeassistant的登陆秘钥.
 
 ![]({{site.baseurl}}/images/homeassistant/bridge_to_rokid/手机配置2.png)
+
+## 结束
+
+正常情况下, 上述操作完成后就可以在rokid的app中扫描到homeassistant中现在支持的设备了. 下一步可以自行对每个设备的tag进行定义.享受使用rokid控制家中设备的乐趣.
+
+
+## 已知问题
+- 如果homeassistant没有设置登陆密码, 可能会运行出错.
+- 可以将homeassistant登陆秘钥设置为环境变量, 这样可以进一步使用SSDP进行自动发现, 免去了手机端的配置.
+
