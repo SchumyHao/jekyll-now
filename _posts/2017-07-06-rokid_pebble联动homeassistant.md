@@ -50,7 +50,6 @@ tags:
 docker pull schumyhao/homebase-hass-bridge-docker
 ```
 
-![]({{site.baseurl}}/images/homeassistant/bridge_to_rokid/dockerimage.jpg)
 
 2.创建容器:
 
