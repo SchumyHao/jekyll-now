@@ -38,7 +38,7 @@ tags:
 ## 开始之前
 
 - 学习使用rokid的app打开[远程调试驱动](https://rokid.github.io/rokid-homebase-docs/tools/developer-driver.html). 现在还没有验证过使用**SSDP**进行自动检测, 所以最稳妥的方式是使用远程调试驱动手动添加设备.
-- 会使用[docker](https://hub.docker.com/), 或者在宿主机上安装[nodejs8.x.x](https://nodejs.org/en/). 我本地是在**群晖**上使用docker的方式运行的, 且没有验证过别的方式. 但是原则上能够运行nodejs8.x.x的设备, 都能够胜任此项任务.
+- 会使用[docker](https://hub.docker.com/), 或者在宿主机上安装[nodejs8.x.x](https://nodejs.org/en/). 我本地是在**群晖**上使用docker的方式运行的, 且没有验证过别的方式. 但是原则上能够运行nodejs7.9.x的设备, 都能够胜任此项任务.
 
 ## 宿主机安装
 
