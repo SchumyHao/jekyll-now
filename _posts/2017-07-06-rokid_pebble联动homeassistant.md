@@ -66,7 +66,7 @@ docker pull schumyhao/homebase-hass-bridge-docker
 
 ### nodejs安装
 
-1.确定自己的nodejs版本为8.x.x, 如果版本过低, 请升级nodejs版本
+1.确定自己的nodejs版本为7.9.x, 如果版本过低, 请升级nodejs版本
 ```
 # node --version
 v8.1.3
