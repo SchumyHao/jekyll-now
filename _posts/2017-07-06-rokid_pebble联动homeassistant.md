@@ -44,15 +44,20 @@ tags:
 
 ### Docker安装
 
-1.搜索并下载`schumyhao/rhome_hass_bridge:latest`docker image.
+1.搜索并下载`schumyhao/homebase-hass-bridge-docker`docker image.
+
+```
+docker pull schumyhao/homebase-hass-bridge-docker
+```
 
 ![]({{site.baseurl}}/images/homeassistant/bridge_to_rokid/dockerimage.jpg)
 
 2.创建容器:
 
 - 设置网络为**host**模式.
-- 设置ENV值**HASS_IP**为局域网内homeassistant的IP地址
-- 如果homeassistant的port**不是默认的8123**的话, 设置ENV值**HASS_PORT**为homeassistant的port
+- 设置ENV值**HASS_IP**为局域网内homeassistant的IP地址.
+- 如果homeassistant的port**不是默认的8123**的话, 设置ENV值**HASS_PORT**为homeassistant的port.
+- 如果homeassistant有设置**登录密码**的话, 设置ENV值**HASS_PASSWD**为你的登录密码.
 
 ![]({{site.baseurl}}/images/homeassistant/bridge_to_rokid/创建容器2.jpg)
 
@@ -89,11 +94,9 @@ rhass
 
 ![]({{site.baseurl}}/images/homeassistant/bridge_to_rokid/手机配置1.png)
 
-2.在配置项中URL输入**上述运行rhass**机器的URL.端口是9999. 例如`http://192.168.1.1:9999`
+2.在配置项中URL输入**上述运行rhass**机器的URL.端口是9999. 例如`http://192.168.1.1:9999`. 注意**http://**不能少
 
-3.userId可以**随意**填写字符串.
-
-4.userToken输入homeassistant的登陆秘钥.
+3.userId和userToken不需要填写.
 
 ![]({{site.baseurl}}/images/homeassistant/bridge_to_rokid/手机配置2.png)
 
@@ -103,6 +106,4 @@ rhass
 
 
 ## 已知问题
-- 如果homeassistant没有设置登陆密码, 可能会运行出错.
-- 可以将homeassistant登陆秘钥设置为环境变量, 这样可以进一步使用SSDP进行自动发现, 免去了手机端的配置.
-
+- 步使用SSDP进行自动发现, 免去了手机端的配置.
