@@ -54,7 +54,7 @@ docker pull schumyhao/homebase-hass-bridge-docker
 
 2.创建容器:
 
-- 设置网络为**host**模式.
+- 设置网络, 将9999端口映射到宿主机端口上, 或者直接设置网络为**host**模式.
 - 设置ENV值**HASS_IP**为局域网内homeassistant的IP地址.
 - 如果homeassistant的port**不是默认的8123**的话, 设置ENV值**HASS_PORT**为homeassistant的port.
 - 如果homeassistant有设置**登录密码**的话, 设置ENV值**HASS_PASSWD**为你的登录密码.
