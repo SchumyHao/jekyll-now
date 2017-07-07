@@ -77,10 +77,11 @@ v8.1.3
 npm install -g homebase-hass-bridge
 ```
 
-3.设置环境变量, 设置homeassistant的IP地址, 如果homeassistant的port不是默认的8123的话, 同样要设置port
+3.设置环境变量, 设置homeassistant的IP地址, 登录密码, 如果homeassistant的port不是默认的8123的话, 同样要设置port
 ```
 export HASS_IP=YOUR_HASS_IP
 export HASS_PORT=YOUR_HASS_PORT
+export HASS_PASSWD=YOUR_PASSWD
 ```
 
 4.启动
